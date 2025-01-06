@@ -4,7 +4,6 @@ import clsx from "clsx";
 
 import { fontSans } from "@/config/fonts";
 
-
 export const metadata: Metadata = {
   title: "POWER MIX STATION",
 };

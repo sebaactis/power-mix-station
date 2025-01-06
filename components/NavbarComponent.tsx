@@ -32,7 +32,7 @@ export const NavbarComponent = () => {
     >
       <NavbarContent>
         <NavbarBrand>
-          <p className="text-medium md:text-4xl font-extrabold bg-black text-white pl-7 pr-3 py-3 skew-x-[-15deg] ml-[-9px]">
+          <p className="text-2xl md:text-4xl font-extrabold bg-black text-white pl-7 pr-3 py-3 skew-x-[-15deg] ml-[-9px]">
             POWER<span className="text-pink-700">MIX</span> STATION
           </p>
         </NavbarBrand>
@@ -46,7 +46,7 @@ export const NavbarComponent = () => {
               key={`${item}-${index}`}
               className="text-white skew-x-[-15deg] mr-[-9px] bg-black p-5 hover:bg-pink-700 transition-all duration-200 hover:px-7"
             >
-              <Link className="text-lg skew-x-[15deg] block" href="#">
+              <Link className="text-lg skew-x-[15deg]" href="#">
                 {item}
               </Link>
             </NavbarMenuItem>
@@ -56,7 +56,7 @@ export const NavbarComponent = () => {
 
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="sm:hidden mr-6"
+        className="sm:hidden mr-6 text-white"
       />
 
       {isMenuOpen && (

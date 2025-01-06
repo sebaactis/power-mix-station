@@ -5,9 +5,9 @@ import mainImg from '@/public/mainImg.png'
 const Welcome = () => {
     return (
 
-        <section className='bg-cover bg-center h-[1000px]' style={{ backgroundImage: `url(${mainImg.src})` }}>
+        <section className='bg-cover md:bg-center md:h-[1000px] h-[650px] text-center md:text-start' style={{ backgroundImage: `url(${mainImg.src})` }}>
             <NavbarComponent />
-            <article className="mt-96 ml-36 text-white text-7xl font-extrabold">
+            <article className="mt-36 md:mt-96 md:ml-36 text-white text-3xl md:text-7xl font-extrabold">
                 <p>
                     INNOVACION FITNESS
                 </p>
@@ -16,9 +16,8 @@ const Welcome = () => {
                 </p>
                 <p className='text-2xl font-medium mt-1.5'>Máxima comodidad y calidad en un solo lugar.</p>
             </article>
-            <button className="bg-pink-700 ml-36 py-4 text-3xl mt-10 -skew-x-12 text-white px-8 transition-all hover:px-10 hover:bg-pink-600">Propuesta</button>
+            <button className="bg-pink-700 md:mt-96 py-4 text-3xl mt-10 -skew-x-12 text-white px-8 transition-all hover:px-10 hover:bg-pink-600">Propuesta</button>
         </section>
-
     )
 };
 
