@@ -1,5 +1,3 @@
-import { NavbarComponent } from '../NavbarComponent';
-
 import { monaSans } from '@/utils/fonts';
 import mainImg from '@/public/mainImg.png'
 
@@ -8,8 +6,8 @@ const Welcome = () => {
     return (
 
         <section className='bg-cover md:bg-center md:h-[1000px] h-[650px] text-center md:text-start' style={{ backgroundImage: `url(${mainImg.src})` }}>
-            <NavbarComponent />
-            <article className="mt-36 md:mt-96 md:ml-36 text-white text-3xl md:text-6xl 2xl:text-7xl font-extrabold">
+
+            <article className="pt-36 md:pt-96 md:ml-36 text-white text-3xl md:text-6xl 2xl:text-8xl font-extrabold">
                 <p className={`${monaSans.className}`}>
                     INNOVACION FITNESS
                 </p>

@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import clsx from "clsx";
 
 import { fontSans } from "@/config/fonts";
+import Footer from "@/components/Footer/Footer";
+import { NavbarComponent } from "@/components/NavbarComponent";
 
 export const metadata: Metadata = {
   title: "POWER MIX STATION",
@@ -21,7 +23,9 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        <NavbarComponent />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -16,15 +16,15 @@ export const NavbarComponent = () => {
 
   const menuItems = [
     "Inicio",
+    "Batidos",
     "Quiénes Somos",
     "Donde Estamos",
-    "Que Hacemos",
     "Contacto",
   ];
 
   return (
     <Navbar
-      className="bg-transparent"
+      className="bg-black"
       classNames={{ wrapper: "px-0" }}
       maxWidth="full"
       position="sticky"
@@ -44,7 +44,7 @@ export const NavbarComponent = () => {
           {menuItems.map((item, index) => (
             <NavbarMenuItem
               key={`${item}-${index}`}
-              className="text-white skew-x-[-15deg] mr-[-9px] bg-black px-4 py-5 2xl:p-5 hover:bg-pink-700 transition-all duration-200 hover:px-7"
+              className="text-white skew-x-[-15deg] mr-[-9px] bg-black px-4 py-5 2xl:px-4 2xl:py-[1.11rem] hover:bg-pink-700 transition-all duration-200 hover:px-7"
             >
               <Link className="text-lg skew-x-[15deg]" href="#">
                 {item}
