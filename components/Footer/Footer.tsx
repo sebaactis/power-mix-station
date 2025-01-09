@@ -15,19 +15,19 @@ const Footer = () => {
         <section className="mb-4 text-center md:text-start pl-10 md:pl-0">
           <p className="text-2xl md:text-3xl font-extrabold text-gray-600 mb-2">Links Rapidos</p>
           <ul className="flex flex-col gap-1 pt-5">
-            <Link href="#">
+            <Link href="/">
               <li className="text-gray-500 text-lg md:text-xl hover:text-gray-700 transition-all duration-200">Inicio</li>
             </Link>
-            <Link href="#">
+            <Link href="/options">
               <li className="text-gray-500 text-lg md:text-xl">Batidos</li>
             </Link>
-            <Link href="#">
+            <Link href="/who">
               <li className="text-gray-500 text-lg md:text-xl">Quiénes Somos</li>
             </Link>
-            <Link href="#">
+            <Link href="/where">
               <li className="text-gray-500 text-lg md:text-xl">Donde Estamos</li>
             </Link>
-            <Link href="#">
+            <Link href="/contact">
               <li className="text-gray-500 text-lg md:text-xl">Contacto</li>
             </Link>
           </ul>

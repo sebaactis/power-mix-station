@@ -2,7 +2,7 @@ import Presentation from "@/components/Presentation/Presentation";
 import StepContainer from "@/components/Step/StepContainer";
 import Welcome from "@/components/Welcome/Welcome";
 
-export default function Home() {
+const Home = () => {
   return (
     <section>
       <Welcome />
@@ -11,3 +11,5 @@ export default function Home() {
     </section>
   );
 }
+
+export default Home;

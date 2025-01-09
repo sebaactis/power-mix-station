@@ -15,7 +15,7 @@ const Welcome = () => {
                     AL ALCANCE
                 </p>
                 <p className='text-2xl font-medium mt-1.5'>Máxima comodidad y calidad en un solo lugar.</p>
-                <button className="bg-pink-700 py-4 text-3xl mt-10 -skew-x-12 text-white px-8 transition-all hover:px-10 hover:bg-pink-600">BATIDOS</button>
+                <button className="bg-pink-700 py-4 text-3xl mt-10 -skew-x-12 text-white px-8 transition-all hover:px-10 hover:bg-pink-600">COMBOS</button>
             </article>
 
         </section>

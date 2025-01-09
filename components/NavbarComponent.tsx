@@ -15,11 +15,11 @@ export const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    "Inicio",
-    "Batidos",
-    "Quiénes Somos",
-    "Donde Estamos",
-    "Contacto",
+    { title: "Inicio", link: "/" },
+    { title: "Batidos", link: "/options" },
+    { title: "Quiénes Somos", link: "/who" },
+    { title: "Dónde Estamos", link: "/where" },
+    { title: "Contacto", link: "/contact" },
   ];
 
   return (
@@ -31,9 +31,10 @@ export const NavbarComponent = () => {
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent>
+
         <NavbarBrand>
           <p className="text-2xl md:text-4xl font-extrabold bg-black text-white pl-7 pr-3 py-3 skew-x-[-15deg] ml-[-9px]">
-            POWER<span className="text-pink-700">MIX</span> STATION
+            <Link href="/">POWER<span className="text-pink-700">MIX</span> STATION</Link>
           </p>
         </NavbarBrand>
 
@@ -46,8 +47,8 @@ export const NavbarComponent = () => {
               key={`${item}-${index}`}
               className="text-white skew-x-[-15deg] mr-[-9px] bg-black px-4 py-5 2xl:px-4 2xl:py-[1.11rem] hover:bg-pink-700 transition-all duration-200 hover:px-7"
             >
-              <Link className="text-lg skew-x-[15deg]" href="#">
-                {item}
+              <Link className="text-lg skew-x-[15deg]" href={item.link}>
+                {item.title}
               </Link>
             </NavbarMenuItem>
           ))}
@@ -63,8 +64,8 @@ export const NavbarComponent = () => {
         <NavbarMenu className="flex flex-col items-center sm:hidden gap-2 mt-2">
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link className="text-medium hover:text-pink-700" href="#">
-                {item}
+              <Link className="text-medium hover:text-pink-700" href={item.link}>
+                {item.title}
               </Link>
             </NavbarMenuItem>
           ))}
