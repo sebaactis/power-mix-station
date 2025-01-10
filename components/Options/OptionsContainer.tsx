@@ -11,7 +11,7 @@ interface Nutrient {
     max: number;
 }
 
-interface Shake {
+export interface Shake {
     name: string;
     description: string;
     ingredients: string[];

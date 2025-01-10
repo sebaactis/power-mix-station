@@ -1,8 +1,13 @@
-import React from 'react'
+import LocationsContainer from '@/components/Locations/LocationsContainer'
+import Main from '@/components/Locations/Main'
+
 
 const Where = () => {
     return (
-        <div>Where</div>
+        <div>
+            <Main />
+            <LocationsContainer />
+        </div>
     )
 }
 

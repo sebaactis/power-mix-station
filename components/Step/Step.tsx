@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import { monaSans } from "@/utils/fonts"
 
@@ -8,7 +8,7 @@ interface Props {
     subtitle: string;
     color: string;
     textColor: string;
-    src: string;
+    src: StaticImageData;
 }
 
 const Step = ({ step, title, subtitle, color, textColor, src }: Props) => {

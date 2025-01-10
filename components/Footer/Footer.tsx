@@ -1,6 +1,7 @@
-import goldNutritionLogo from "@/public/goldNutrition.png"
 import Image from "next/image"
 import Link from "next/link"
+
+import goldNutritionLogo from "@/public/goldNutrition.png"
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           <p className="text-2xl md:text-3xl font-extrabold text-gray-600 pr-3 py-3">
             POWER<span className="text-pink-700">MIX</span> STATION
           </p>
-          <Image className="pb-10" src={goldNutritionLogo} width={140} />
+          <Image alt="logoNutrition" className="pb-10" src={goldNutritionLogo} width={140} />
         </section>
         <section className="mb-4 text-center md:text-start pl-10 md:pl-0">
           <p className="text-2xl md:text-3xl font-extrabold text-gray-600 mb-2">Links Rapidos</p>
@@ -19,7 +20,7 @@ const Footer = () => {
               <li className="text-gray-500 text-lg md:text-xl hover:text-gray-700 transition-all duration-200">Inicio</li>
             </Link>
             <Link href="/options">
-              <li className="text-gray-500 text-lg md:text-xl">Batidos</li>
+              <li className="text-gray-500 text-lg md:text-xl">Opciones</li>
             </Link>
             <Link href="/who">
               <li className="text-gray-500 text-lg md:text-xl">Quiénes Somos</li>

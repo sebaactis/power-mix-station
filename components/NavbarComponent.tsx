@@ -16,7 +16,7 @@ export const NavbarComponent = () => {
 
   const menuItems = [
     { title: "Inicio", link: "/" },
-    { title: "Batidos", link: "/options" },
+    { title: "Opciones", link: "/options" },
     { title: "Quiénes Somos", link: "/who" },
     { title: "Dónde Estamos", link: "/where" },
     { title: "Contacto", link: "/contact" },
