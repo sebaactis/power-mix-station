@@ -47,7 +47,7 @@ export const NavbarComponent = () => {
               key={`${item}-${index}`}
               className="text-white skew-x-[-15deg] mr-[-9px] bg-black px-4 py-5 2xl:px-4 2xl:py-[1.11rem] hover:bg-pink-700 transition-all duration-200 hover:px-7"
             >
-              <Link className="text-lg skew-x-[15deg]" href={item.link}>
+              <Link className="text-xl skew-x-[15deg]" href={item.link}>
                 {item.title}
               </Link>
             </NavbarMenuItem>

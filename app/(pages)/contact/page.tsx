@@ -1,8 +1,12 @@
-import React from 'react'
+import FormContainer from '@/components/Contact/FormContainer'
+import Main from '@/components/Contact/Main'
 
 const Contact = () => {
     return (
-        <div>Contact</div>
+        <div>
+            <Main />
+            <FormContainer />
+        </div>
     )
 }
 

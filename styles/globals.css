@@ -10,4 +10,9 @@
   :root {
         --radius: 0.5rem;
     }
+      .font-outline {
+        -webkit-text-stroke-color: #ffffff1a;
+        -webkit-text-stroke-width: 2px;
+        color: #69696900
+      }
 }
