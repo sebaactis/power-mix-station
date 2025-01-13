@@ -20,16 +20,16 @@ const Footer = () => {
               <li className="text-gray-500 text-lg md:text-xl hover:text-gray-700 transition-all duration-200">Inicio</li>
             </Link>
             <Link href="/options">
-              <li className="text-gray-500 text-lg md:text-xl">Opciones</li>
+              <li className="text-gray-500 text-lg md:text-xl hover:text-gray-700 transition-all duration-200">Opciones</li>
             </Link>
             <Link href="/who">
-              <li className="text-gray-500 text-lg md:text-xl">Quiénes Somos</li>
+              <li className="text-gray-500 text-lg md:text-xl hover:text-gray-700 transition-all duration-200">Quiénes Somos</li>
             </Link>
             <Link href="/where">
-              <li className="text-gray-500 text-lg md:text-xl">Donde Estamos</li>
+              <li className="text-gray-500 text-lg md:text-xl hover:text-gray-700 transition-all duration-200">Donde Estamos</li>
             </Link>
             <Link href="/contact">
-              <li className="text-gray-500 text-lg md:text-xl">Contacto</li>
+              <li className="text-gray-500 text-lg md:text-xl hover:text-gray-700 transition-all duration-200">Contacto</li>
             </Link>
           </ul>
         </section>

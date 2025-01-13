@@ -17,7 +17,7 @@ const OptionsContainer = () => {
                 <motion.p
                     className='font-outline-white text-transparent text-5xl md:text-8xl mb-10 italic'
                     initial={{ opacity: 0, x: -100 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true, margin: '-10% 0px' }}
                     whileInView={{ opacity: 1, x: 0 }}
                 >
