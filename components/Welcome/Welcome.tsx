@@ -46,7 +46,7 @@ const Welcome = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
                     <button className="bg-pink-700 py-3 md:py-4 text-3xl mt-10 -skew-x-12 text-white px-5 md:px-8 transition-all hover:px-10 hover:bg-pink-600">
-                        <Link href="/options">VER PRODUCTOS</Link>
+                        <Link href="/productos">VER PRODUCTOS</Link>
                     </button>
                 </motion.div>
 
