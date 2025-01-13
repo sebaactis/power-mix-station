@@ -19,7 +19,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="es">
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans overflow-x-hidden",
+          "min-h-screen bg-background font-sans md:overflow-x-hidden",
           fontSans.variable,
         )}
       >

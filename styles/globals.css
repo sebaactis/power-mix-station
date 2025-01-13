@@ -15,4 +15,10 @@
         -webkit-text-stroke-width: 2px;
         color: #69696900
       }
+
+      .font-outline-white {
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 2px;
+        color: white;
+      }
 }

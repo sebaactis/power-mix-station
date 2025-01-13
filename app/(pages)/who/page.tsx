@@ -1,8 +1,12 @@
-import React from 'react'
+import AboutContainer from '@/components/About/AboutContainer'
+import Main from '@/components/About/Main'
 
 const Who = () => {
     return (
-        <div>Who</div>
+        <section>
+            <Main />
+            <AboutContainer />
+        </section>
     )
 }
 

@@ -16,7 +16,7 @@ export const NavbarComponent = () => {
 
   const menuItems = [
     { title: "Inicio", link: "/" },
-    { title: "Opciones", link: "/options" },
+    { title: "Productos", link: "/productos" },
     { title: "Quiénes Somos", link: "/who" },
     { title: "Dónde Estamos", link: "/where" },
     { title: "Contacto", link: "/contact" },
@@ -33,7 +33,7 @@ export const NavbarComponent = () => {
       <NavbarContent>
 
         <NavbarBrand>
-          <p className="text-2xl md:text-4xl font-extrabold bg-black text-white pl-7 pr-3 py-3 skew-x-[-15deg] ml-[-9px]">
+          <p className="text-2xl md:text-4xl font-extrabold text-white pl-7 pr-3 py-3 skew-x-[-15deg] ml-[-9px]">
             <Link href="/">POWER<span className="text-pink-700">MIX</span> STATION</Link>
           </p>
         </NavbarBrand>
@@ -55,16 +55,18 @@ export const NavbarComponent = () => {
         </NavbarContent>
       </NavbarContent>
 
-      <NavbarMenuToggle
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="sm:hidden mr-6 text-white"
-      />
+      <div className="bg-pink-700 h-full px-5 md:hidden sticky">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden text-white"
+        />
+      </div>
 
       {isMenuOpen && (
-        <NavbarMenu className="flex flex-col items-center sm:hidden gap-2 mt-2">
+        <NavbarMenu className="flex flex-col items-center sm:hidden pt-5 gap-2 bg-pink-900/70">
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link className="text-medium hover:text-pink-700" href={item.link}>
+              <Link className="text-xl italic text-white" href={item.link}>
                 {item.title}
               </Link>
             </NavbarMenuItem>
