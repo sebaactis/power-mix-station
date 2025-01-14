@@ -92,9 +92,9 @@ const ProductItems = ({ selectedProduct, setSelectedProduct }: Props) => {
                             <p className={`${monaSans.className} text-gray-400 font-semibold italic mb-5`}>{product.description}</p>
                             <div className="mb-4">
                                 {product.benefits.map((benefit, index) => (
-                                    <div key={index} className="flex items-center mb-2">
-                                        <benefit.icon className="text-[#be185d] w-5 h-5 mr-2" />
-                                        <span className={`${monaSans.className} text-gray-200 text-sm`}>{benefit.text}</span>
+                                    <div key={index} className="flex items-center mb-4">
+                                        <benefit.icon className="text-[#be185d] w-5 h-5 mr-4" />
+                                        <span className={`${monaSans.className} text-gray-200 text-sm w-[90%]`}>{benefit.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -113,7 +113,7 @@ const ProductItems = ({ selectedProduct, setSelectedProduct }: Props) => {
                                             </div>
                                             <div className="flex items-center mb-2">
                                                 <Clock className="text-[#be185d] w-5 h-5 mr-2" />
-                                                <span className={` ${monaSans.className} text-gray-200 text-sm`}>Timing: {product.timing}</span>
+                                                <span className={` ${monaSans.className} text-gray-200 text-sm w-[90%]`}>Timing: {product.timing}</span>
                                             </div>
                                             <div className="mt-4">
                                                 <span className={`${monaSans.className} text-white font-semibold mb-2 block`}>Sabores disponibles:</span>

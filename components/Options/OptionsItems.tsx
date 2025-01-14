@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+    import { motion, AnimatePresence } from 'framer-motion';
 import { Dispatch, SetStateAction } from 'react';
 import { Beaker, Coffee, Banana, Milk, Droplet, Apple, Dumbbell, Zap, Brain } from 'lucide-react'
 
