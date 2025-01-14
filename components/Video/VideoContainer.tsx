@@ -16,7 +16,7 @@ const VideoContainer = () => {
             </video>
 
             <div className="flex flex-col gap-2 items-center md:items-start">
-                <div className='font-outline-pink text-transparent text-5xl md:text-[4rem] 2xl:text-8xl z-10 italic '>COMO FUNCIONA</div>
+                <div className='font-outline-pink text-transparent text-5xl md:text-[4rem] 2xl:text-8xl z-10 italic text-center md:text-start'>COMO FUNCIONA</div>
                 <p className={`${monaSans.className} text-white md:text-lg 2xl:text-2xl font-light italic ml-2 w-[86%] text-center md:text-start`}>Descubre cómo nuestra innovadora máquina expendedora revoluciona la forma en que accedes a tus suplementos deportivos. Con una interfaz intuitiva y una selección premium de productos, optimizamos tu rutina de entrenamiento.</p>
             </div>
         </section>
