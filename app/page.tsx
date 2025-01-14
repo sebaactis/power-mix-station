@@ -1,5 +1,6 @@
 import Presentation from "@/components/Presentation/Presentation";
 import StepContainer from "@/components/Step/StepContainer";
+import VideoContainer from "@/components/Video/VideoContainer";
 import Welcome from "@/components/Welcome/Welcome";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Welcome />
       <Presentation />
       <StepContainer />
+      <VideoContainer />
     </section>
   );
 }

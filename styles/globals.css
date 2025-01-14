@@ -21,4 +21,10 @@
         -webkit-text-stroke-width: 2px;
         color: white;
       }
+
+      .font-outline-pink {
+        -webkit-text-stroke-color: #9d174d;
+        -webkit-text-stroke-width: 2px;
+        color: #9d174d;
+      }
 }
