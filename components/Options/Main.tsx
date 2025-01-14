@@ -28,7 +28,7 @@ const Main = () => {
 
                 <motion.p
                     animate={{ opacity: 1, x: 0 }}
-                    className={`${monaSans.className} text-white text-lg md:text-xl font-light text-center w-[80%] md:w-[40%]`}
+                    className={`${monaSans.className} text-white text-lg md:text-xl font-light text-center w-[80%] md:w-[60%] 2xl:w-[40%]`}
                     initial={{ opacity: 0, x: -50 }}
                     transition={{ duration: 0.7, delay: 0.3 }}
                 >

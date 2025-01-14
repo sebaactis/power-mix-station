@@ -39,7 +39,7 @@ const AboutVision = () => {
                             <p className={`${monaSans.className} text-white text-lg md:text-xl font-light md:w-[40%]`}>Gimnasios disponibles</p>
                         </div>
 
-                        <div className="flex gap-4 items-center ml-1 md:-ml-5">
+                        <div className="flex gap-4 items-center ml-1 md:mr-24 2xl:-ml-5 ">
                             <p className={`${monaSans.className} text-pink-600 text-6xl md:text-7xl font-extrabold`}> {"<"}1</p>
                             <p className={`${monaSans.className} text-white text-lg md:text-xl font-light md:w-[50%]`}>Minuto de espera</p>
                         </div>
