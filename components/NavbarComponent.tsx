@@ -26,6 +26,7 @@ export const NavbarComponent = () => {
     <Navbar
       className="bg-black"
       classNames={{ wrapper: "px-0" }}
+      isMenuOpen={isMenuOpen}
       maxWidth="full"
       position="sticky"
       onMenuOpenChange={setIsMenuOpen}
@@ -66,7 +67,7 @@ export const NavbarComponent = () => {
         <NavbarMenu className="flex flex-col items-center sm:hidden pt-5 gap-2 bg-pink-900/70">
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link className="text-xl italic text-white" href={item.link}>
+              <Link className="text-xl italic text-white" href={item.link} onClick={() => setIsMenuOpen(false)}>
                 {item.title}
               </Link>
             </NavbarMenuItem>

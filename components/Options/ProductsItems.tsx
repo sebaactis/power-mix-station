@@ -23,45 +23,75 @@ interface Product {
 const products: Product[] = [
     {
         id: 1,
-        name: "Creatina Monohidrato",
+        name: "Proteinas",
         description: "Aumenta la fuerza y el rendimiento muscular",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Incrementa la fuerza muscular" },
-            { icon: Zap, text: "Mejora el rendimiento en ejercicios de alta intensidad" },
-            { icon: Brain, text: "Potencia la función cognitiva" }
+            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
         ],
         dosage: "5 gramos por día",
         timing: "Antes o después del entrenamiento",
-        flavors: ["Sin sabor"]
+        flavors: ["Chocolate", "Vainilla"]
     },
     {
         id: 2,
-        name: "Proteína de Suero",
-        description: "Ideal para la recuperación y el crecimiento muscular",
+        name: "Proteínas Isoladas",
+        description: "Aumenta la fuerza y el rendimiento muscular",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Promueve el crecimiento muscular" },
-            { icon: Heart, text: "Ayuda en la recuperación post-entrenamiento" },
-            { icon: Fire, text: "Puede aumentar el metabolismo" }
+            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
         ],
         dosage: "25-30 gramos por porción",
         timing: "Después del entrenamiento o entre comidas",
-        flavors: ["Vainilla", "Chocolate", "Fresa"]
+        flavors: ["Vainilla"]
     },
     {
         id: 3,
-        name: "BCAA",
-        description: "Aminoácidos esenciales para la recuperación muscular",
+        name: "Proteinas Vegetal",
+        description: "Aumenta la fuerza y el rendimiento muscular",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Reduce el dolor muscular" },
-            { icon: Zap, text: "Disminuye la fatiga durante el ejercicio" },
-            { icon: Fire, text: "Puede ayudar en la pérdida de grasa" }
+            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
         ],
         dosage: "5-10 gramos por día",
         timing: "Antes, durante o después del entrenamiento",
-        flavors: ["Limón", "Sandía", "Frutos del bosque"]
+        flavors: ["Coco"]
+    },
+    {
+        id: 4,
+        name: "Gainer",
+        description: "Macronutriente para construir masa muscular",
+        color: "from-blue-600",
+        benefits: [
+            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+        ],
+        dosage: "5-10 gramos por día",
+        timing: "Antes, durante o después del entrenamiento",
+        flavors: ["Chocolate"]
+    },
+    {
+        id: 5,
+        name: "Pre Work",
+        description: "Aminoácidos esenciales para la recuperación muscular",
+        color: "from-blue-600",
+        benefits: [
+            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+        ],
+        dosage: "5-10 gramos por día",
+        timing: "Antes del entrenamiento",
+        flavors: ["Mango"]
+    },
+    {
+        id: 6,
+        name: "Creatina",
+        description: "Aminoácidos esenciales para la recuperación muscular",
+        color: "from-blue-600",
+        benefits: [
+            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+        ],
+        dosage: "5-10 gramos por día",
+        timing: "Antes, durante o después del entrenamiento",
+        flavors: ["Sin sabor"]
     }
 ]
 
@@ -93,7 +123,7 @@ const ProductItems = ({ selectedProduct, setSelectedProduct }: Props) => {
                             <div className="mb-4">
                                 {product.benefits.map((benefit, index) => (
                                     <div key={index} className="flex items-center mb-4">
-                                        <benefit.icon className="text-[#be185d] w-5 h-5 mr-4" />
+                                        <benefit.icon className="text-[#be185d] w-7 h-7 mr-4" />
                                         <span className={`${monaSans.className} text-gray-200 text-sm w-[90%]`}>{benefit.text}</span>
                                     </div>
                                 ))}
