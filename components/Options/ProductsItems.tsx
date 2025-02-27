@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { Dumbbell, Zap, Brain, Heart, FlameIcon as Fire, Clock } from 'lucide-react'
+import { Dumbbell, Zap, FlameIcon as Fire, Clock, BicepsFlexed, Wind, ArrowBigRight, CheckCircle2, Vegan, ChevronsRightIcon } from 'lucide-react'
 import { Dispatch, SetStateAction } from 'react';
 
 import { monaSans } from '@/utils/fonts';
@@ -23,61 +23,94 @@ interface Product {
 const products: Product[] = [
     {
         id: 1,
-        name: "Proteinas",
-        description: "Aumenta la fuerza y el rendimiento muscular",
+        name: "Proteína de Suero",
+        description: "Recuperación y crecimiento muscular al máximo",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+            { icon: BicepsFlexed, text: "Recuperación rápida post-entreno" },
+            { icon: BicepsFlexed, text: "Aumento muscular efectivo" },
+            { icon: Fire, text: "Metabolismo acelerado" },
+            { icon: Wind, text: "Menos fatiga y mejor rendimiento" }
         ],
-        dosage: "5 gramos por día",
-        timing: "Antes o después del entrenamiento",
+        dosage: [
+            { icon: ChevronsRightIcon, text: "28 Grms de Proteina" },
+            { icon: ChevronsRightIcon, text: "5.9 Grms BCAAS" },
+            { icon: ChevronsRightIcon, text: "4.6 Grms de Glutamina" },
+        ],
+        timing: "Justo después del entrenamiento para recuperación óptima",
         flavors: ["Chocolate", "Vainilla"]
     },
     {
         id: 2,
-        name: "Proteínas Isoladas",
-        description: "Aumenta la fuerza y el rendimiento muscular",
+        name: "Proteína Aislada",
+        description: "Rápida absorción para resultados óptimos",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+            { icon: CheckCircle2, text: "Mayor pureza y sin lactosa" },
+            { icon: CheckCircle2, text: "Absorción ultra rápida" },
+            { icon: CheckCircle2, text: "Músculos definidos sin grasas extras" }
         ],
-        dosage: "25-30 gramos por porción",
-        timing: "Después del entrenamiento o entre comidas",
+        dosage: [
+            { icon: ChevronsRightIcon, text: "28 Grms de Proteina" },
+            { icon: ChevronsRightIcon, text: "5.9 Grms BCAAS" },
+            { icon: ChevronsRightIcon, text: "4.6 Grms de Glutamina" },
+        ],
+        timing: "Inmediatamente después del entrenamiento.",
         flavors: ["Vainilla"]
     },
     {
         id: 3,
-        name: "Proteinas Vegetal",
-        description: "Aumenta la fuerza y el rendimiento muscular",
+        name: "Proteina Vegetal",
+        description: "Nutrición completa y de origen natural",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+            { icon: Vegan, text: "100% vegetal, sin lactosa" },
+            { icon: Vegan, text: "Alta digestibilidad" },
+            { icon: Vegan, text: "Energía y recuperación sin pesadez" }
         ],
-        dosage: "5-10 gramos por día",
-        timing: "Antes, durante o después del entrenamiento",
+        dosage: [
+            { icon: ChevronsRightIcon, text: "30 Grms de Proteina" },
+            { icon: ChevronsRightIcon, text: "Vitamina B12" },
+            { icon: ChevronsRightIcon, text: "4.6 Grms de Aminoacidos" },
+        ],
+        timing: "Después de entrenar.",
         flavors: ["Coco"]
     },
     {
         id: 4,
-        name: "Gainer",
-        description: "Macronutriente para construir masa muscular",
+        name: "Ganador de Peso",
+        description: "Más músculo, más volumen, más energía",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+            { icon: Dumbbell, text: "Alta carga calórica para ganar masa" },
+            { icon: Dumbbell, text: "Mejor recuperación y rendimiento" },
+            { icon: Dumbbell, text: "Energía sostenida" }
         ],
-        dosage: "5-10 gramos por día",
-        timing: "Antes, durante o después del entrenamiento",
+        dosage: [
+            { icon: ChevronsRightIcon, text: "28 Grms de Proteina" },
+            { icon: ChevronsRightIcon, text: "67 Grms de Carbohidratos" },
+            { icon: ChevronsRightIcon, text: "5.9 Grms BCAAS" },
+            { icon: ChevronsRightIcon, text: "4.6 Grms de Glutamina" },
+            { icon: ChevronsRightIcon, text: "4.9 Grms de Creatina" }
+        ],
+        timing: "Después del entrenamiento",
         flavors: ["Chocolate"]
     },
     {
         id: 5,
-        name: "Pre Work",
-        description: "Aminoácidos esenciales para la recuperación muscular",
+        name: "Pre-Workout",
+        description: "Explosión de energía y concentración total para tu entrenamiento.",
         color: "from-blue-600",
         benefits: [
-            { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
+            { icon: Zap, text: "Mayor energía y resistencia" },
+            { icon: Zap, text: "Más enfoque y concentración" },
+            { icon: Zap, text: "Retrasa la fatiga" }
         ],
-        dosage: "5-10 gramos por día",
+        dosage: [
+            { icon: ChevronsRightIcon, text: "1750 Mg de Taurina" },
+            { icon: ChevronsRightIcon, text: "176 Mg de Cafeina." },
+            { icon: ChevronsRightIcon, text: "Vitaminas B3  - B6 - B12" }
+        ],
         timing: "Antes del entrenamiento",
         flavors: ["Mango"]
     },
@@ -123,7 +156,7 @@ const ProductItems = ({ selectedProduct, setSelectedProduct }: Props) => {
                             <div className="mb-4">
                                 {product.benefits.map((benefit, index) => (
                                     <div key={index} className="flex items-center mb-4">
-                                        <benefit.icon className="text-[#be185d] w-7 h-7 mr-4" />
+                                        <benefit.icon className="text-[#be185d] w-6 h-6 mr-4" />
                                         <span className={`${monaSans.className} text-gray-200 text-sm w-[90%]`}>{benefit.text}</span>
                                     </div>
                                 ))}
@@ -138,14 +171,21 @@ const ProductItems = ({ selectedProduct, setSelectedProduct }: Props) => {
                                     >
                                         <div className="border-t border-gray-700 pt-4 mt-4">
                                             <div className="flex items-center mb-2">
-                                                <Clock className="text-[#be185d] w-5 h-5 mr-2" />
-                                                <span className={` ${monaSans.className} text-gray-200 text-sm`}>Dosificación: {product.dosage}</span>
-                                            </div>
-                                            <div className="flex items-center mb-2">
-                                                <Clock className="text-[#be185d] w-5 h-5 mr-2" />
+                                                <Clock className="text-[#be185d] w-6 h-6 mr-2" />
                                                 <span className={` ${monaSans.className} text-gray-200 text-sm w-[90%]`}>Timing: {product.timing}</span>
                                             </div>
-                                            <div className="mt-4">
+                                            <div className="border-t border-gray-700 pt-4 mt-4" />
+
+                                            <p className={`${monaSans.className} text-white font-semibold mb-2 block`}>Cada batido aporta:</p>
+                                            <div className="flex flex-col m-2 mt-3">
+                                                {product.dosage.map((dosage, index) => (
+                                                    <div key={index} className="flex items-center mb-2">
+                                                        <dosage.icon className="text-[#be185d] w-7 h-7 mr-1" />
+                                                        <span className={`${monaSans.className} text-gray-200 text-sm w-[90%]`}>{dosage.text}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <div className="mt-5">
                                                 <span className={`${monaSans.className} text-white font-semibold mb-2 block`}>Sabores disponibles:</span>
                                                 <div className="flex flex-wrap gap-2">
                                                     {product.flavors.map((flavor, index) => (
