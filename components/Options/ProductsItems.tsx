@@ -1,10 +1,15 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { Dumbbell, Zap, FlameIcon as Fire, Clock, BicepsFlexed, Wind, ArrowBigRight, CheckCircle2, Vegan, ChevronsRightIcon } from 'lucide-react'
+import { Dumbbell, Zap, FlameIcon as Fire, Clock, BicepsFlexed, Wind, CheckCircle2, Vegan, ChevronsRightIcon } from 'lucide-react'
 import { Dispatch, SetStateAction } from 'react';
 
 import { monaSans } from '@/utils/fonts';
 
 interface Benefit {
+    icon: React.ElementType;
+    text: string;
+}
+
+interface Dosage {
     icon: React.ElementType;
     text: string;
 }
@@ -15,7 +20,7 @@ interface Product {
     description: string;
     color: string;
     benefits: Benefit[];
-    dosage: string;
+    dosage: Dosage[];
     timing: string;
     flavors: string[];
 }
@@ -122,7 +127,11 @@ const products: Product[] = [
         benefits: [
             { icon: Dumbbell, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex incidunt sed voluptas deleniti tenetur expedita nesciunt aspernatur voluptatem voluptatibus, error cupiditate maxime, sapiente nostrum dolorum vitae suscipit laborum amet." }
         ],
-        dosage: "5-10 gramos por día",
+        dosage: [
+            { icon: ChevronsRightIcon, text: "1750 Mg de Taurina" },
+            { icon: ChevronsRightIcon, text: "176 Mg de Cafeina." },
+            { icon: ChevronsRightIcon, text: "Vitaminas B3  - B6 - B12" }
+        ],
         timing: "Antes, durante o después del entrenamiento",
         flavors: ["Sin sabor"]
     }
